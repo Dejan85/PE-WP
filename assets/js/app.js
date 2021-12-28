@@ -1,4 +1,4 @@
-import { dom } from "./dom-logic/index.js";
+import { dom } from "./dom/index.js";
 
 // HEADER SHADOW LOGIC
 dom.showHeaderShadowOnScroll();
