@@ -1,6 +1,6 @@
 import { mobileMenuClickEvent, showHeaderShadowOnScroll } from "./listeners.js";
 
-// selectors
+// selector and main constructor
 const Dom = function () {
   // header
   this.header = document.querySelector("header");
