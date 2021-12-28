@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap');
+
+/* ovo ovde je sve za mobile, phablet, tablet*/
+
+:root {
+    --ff-primary: 'Nunito', sans-serif;
+    --ff-secondary: 'Playfair Display', serif;
+    --clr-primary: #2a2a2a;
+    --clr-secondary: #ee9a20;
+    --footer-background: #1a1a24;
+    --spacer: 2rem;
+    --fs-body: 1rem;
+    --fs-title: 1.75rem;
+    --fs-small: 0.8rem;
+    --fs-h6: 1.25rem;
+    --global-shadow: 0 4px 16px hsla(355, 25%, 15%, .1);
+}
+
+
+/* ovo ovde je za vleike monitore */
+
+@media ( min-width:50rem) {
+     :root {}
+}
+
+
+/*--------------------------------------------------
+      Table of contents
+      ------------------------------------------------
+
+      00. Global Settings
+      01. Header
+      02. Footer
+      03. Hero
+      04. Paragraph
+      05. Blog Posts
+      06. Newsletter
+      07. Events
+      08. Testimonials
+      09. Photo
+      10. Exams
+      11. Pricelist
+      12. Contact
+      13. Cources
+      14. Main Navigation
+
+  ---------------------------------------------------*/
+
+
+/*--------------------------------------------------
+      00. Global Settings
+  ---------------------------------------------------*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+body {
+    text-rendering: optimizeSpeed;
+    line-height: 1.7;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    color: var(--clr-primary);
+    font-weight: 300;
+    /* zabodi futer dole, molim te */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+button {
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--ff-secondary);
+    margin-bottom: 0.5rem;
+}
+
+h6 {
+    font-size: var(--fs-h6);
+}
+
+h2 {
+    font-weight: 600;
+    font-size: var(--fs-title);
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+@media (min-width:70em) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    padding: 1.15rem 2.75rem;
+    border-radius: 3rem;
+    transition: .3s;
+}
+
+.btn-primary {}
+
+.btn-secondary {}
+
+
+/*--------------------------------------------------
+      01. Header
+  ---------------------------------------------------*/
+
+header {
+    padding: 1.5rem 0;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+}
+
+.header-scroll {
+    box-shadow: var(--global-shadow);
+}
+
+.header-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {}
+
+
+/*--------------------------------------------------
+      02. Footer
+  ---------------------------------------------------*/
+
+footer {
+    margin-top: auto;
+    background-color: var(--footer-background);
+    padding-bottom: var(--spacer);
+}
+
+footer>* {
+    color: #fff;
+}
+
+.footer-body {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.footer-misc {
+    display: flex;
+    flex-direction: column;
+    margin: var(--spacer) 0;
+}
+
+.footer-item a {
+    color: #fff;
+}
+
+.footer-item:first-child {
+    grid-column: span 2;
+}
+
+.footer-misc-span {}
+
+.footer-social {}
+
+.footer-misc-list a {
+    color: #fff;
+}
+
+@media ( min-width:50em) {
+    .footer-body {
+        grid-template-columns: 3fr 1fr 1fr;
+        gap: var(--spacer)
+    }
+    .footer-item:first-child {
+        grid-column: auto;
+    }
+    .footer-misc {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer-misc-list {
+        display: flex;
+    }
+    .footer-misc-list li+li {
+        margin-left: 1rem;
+    }
+}
+
+
+/*--------------------------------------------------
+      03. Hero
+  ---------------------------------------------------*/
+
+.hero {}
+
+.hero-body {}
+
+.hero-navigation {}
+
+.hero-list {}
+
+
+/*--------------------------------------------------
+      04. Paragraph
+---------------------------------------------------*/
+
+.paragraph {}
+
+.paragraph-body {}
+
+.paragraph-content {}
+
+.paragraph-thumb {}
+
+@media ( min-width:50em) {
+    .paragraph-body {
+        display: flex;
+    }
+    .paragraph-body>* {
+        /* trick za dipsley flex da obe kolone budeu po 50% */
+        width: 100%;
+    }
+}
+
+
+/*--------------------------------------------------
+      05. Blog Post 
+---------------------------------------------------*/
+
+.blog {
+    padding: var(--spacer) 0;
+}
+
+.blog-posts {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacer);
+}
+
+.blog-item {
+    border-radius: .75rem;
+    background-color: #fff;
+    box-shadow: var(--global-shadow);
+}
+
+.blog-item h3 {
+    color: var(--clr-secondary);
+    font-weight: 600;
+}
+
+.blog-item img {
+    border-radius: .75rem .75rem 0 0;
+}
+
+.blog-title {}
+
+.blog-date,
+.blog-author {
+    font-size: var(--fs-small);
+}
+
+.blog-author {}
+
+.blog-excerpt {
+    padding: calc(var(--spacer)/2);
+}
+
+.blog-excerpt p {
+    padding-bottom: calc(var(--spacer)/2);
+}
+
+@media (min-width:50em) {
+    .blog-posts {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:70em) {
+    .blog-posts {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+/*--------------------------------------------------
+      06. Newsletter
+---------------------------------------------------*/
+
+.newsletter {}
+
+.newsletter-body {}
+
+.newsletter-form {}
+
+.newsletter-icon {}
+
+.newsletter-note {}
+
+
+/*--------------------------------------------------
+      07. Events
+---------------------------------------------------*/
+
+.events {}
+
+.events-body {}
+
+.events-item {}
+
+
+/*--------------------------------------------------
+      08. Testimonials
+---------------------------------------------------*/
+
+.testimonials {}
+
+.testimonials-item {}
+
+.testimonials-name {}
+
+.testimonials-user {}
+
+
+/*--------------------------------------------------
+      09. Photo
+---------------------------------------------------*/
+
+.photo {}
+
+
+/*--------------------------------------------------
+      10. Exams
+---------------------------------------------------*/
+
+.exams {}
+
+.exams-body {}
+
+.exams-item {}
+
+.exams-item a {}
+
+.exams-item img {}
+
+
+/*--------------------------------------------------
+      11. Price Lists
+---------------------------------------------------*/
+
+
+/*--------------------------------------------------
+      12. Contact
+---------------------------------------------------*/
+
+.contact {}
+
+.contact-body {}
+
+.contact-form {}
+
+
+/*--------------------------------------------------
+     13. Courses
+---------------------------------------------------*/
+
+.courses {}
+
+.courses-body {}
+
+
+/*--------------------------------------------------
+      14. Main Navigation
+  ---------------------------------------------------*/
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list li+li {
+    margin-left: 1rem;
+}
+
+.nav-list a {
+    padding: 0.5rem 0.25rem;
+    color: var(--clr-primary);
+}
+
+.nav-list a {}
+
+
+/*
+pokazati dekiju fensi pseudo elements hover zezanije, ako ga ne zamara, za stura
+ */
+
+@media (max-width:60rem) {
+    .nav {
+        position: fixed;
+        width: 100%;
+        right: 0;
+        top: 0;
+        height: 100%;
+        z-index: 1111;
+        transform: translateX(120%);
+        background-color: #fff;
+        box-shadow: var(--global-shadow);
+        transition: .3s cubic-bezier( 0.79, 0.33, 0.14, 0.53);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .nav.is-active {
+        transform: translateX(0);
+    }
+    .nav-list {
+        flex-direction: column;
+    }
+    .nav-list {
+        flex-direction: column;
+    }
+    .nav-list li+li {
+        margin-left: 0;
+        margin-top: 0.75rem;
+    }
+    .nav-list a {
+        color: var(--clr-secondary);
+        font-weight: 500;
+    }
+}
+
+#hamburger,
+.nav-overlay,
+#button-close {
+    display: block;
+    cursor: pointer;
+}
+
+#button-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+@media (min-width:60rem) {
+    #hamburger,
+    #button-close,
+    .nav-overlay {
+        display: none;
+    }
+}

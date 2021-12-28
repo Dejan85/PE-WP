@@ -1,0 +1,23 @@
+
+.LOG
+
+
+https://jovana-2zprrhsj4-jovanaxad.vercel.app/
+
+Maps
+https://www.gloomaps.com/
+
+Pages
+
+- Home Page
+- O nama
+- Kursevi 
+- Pripreme za ispite
+  - Ispiti Single
+- Cenovnik
+- Dogadjaji
+- Blog Posts
+  - Blog Single
+- Kontakt
+- 404 Page
+

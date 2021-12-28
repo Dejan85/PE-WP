@@ -1,0 +1,624 @@
+<!--
+ **********************************************
+ * Project: Skola Engleskog jezika
+ **********************************************
+ * Developed by: Strahinja Djukic & Markovic Dejan
+   + design: Dejan Markovic
+   + e-mail: <dejan.markovic@gmail.om>
+   + html, css, vanilla js & php
+   + responsive page
+ *********************************************
+
+ https://piccalil.li/blog/a-modern-css-reset/
+-->
+
+<!DOCTYPE html>
+<html lang="sr-SR">
+
+<head>
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="UTF-8">
+    <title>Website - Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Apple Devices Settings
+	================================================== -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+
+    <!-- Remove all auto-formatting for telephone number -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:locale" content="sr_RS" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Startseite" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:url" content="" />
+    <meta property="og:image:type" content="image/jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="627" />
+    <meta property="article:published_time" content="21-06-03">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:title" content="Startseite" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+</head>
+
+
+<body>
+    <!--[if lte IE 9]>
+	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+     <![endif]-->
+
+    <!-- hocu na on scorll da mi se pokaze header scoll kalsa -->
+
+    <header class="header-scroll">
+        <!-- /start header -->
+
+        <div class="container">
+
+            <div class="header-body">
+                <!-- /start header-body -->
+
+                <a class="logo" href=""><img src="assets/img/logo.png" alt=""></a>
+
+                <nav class="nav">
+
+                    <!-- zato sto mi treba za repsonive 
+                     treba mi close button da ide negde 
+                    -->
+                    <button id="button-close"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><path d="M19.8534546,19.1465454L12.7069092,12l7.1465454-7.1465454c0.1871948-0.1937256,0.1871948-0.5009155,0-0.6947021c-0.1918335-0.1986084-0.5083618-0.2041016-0.7069702-0.0122681l-7.1465454,7.1465454L4.8534546,4.1465454c-0.1937256-0.1871338-0.5009155-0.1871338-0.6947021,0C3.960144,4.3383789,3.9546509,4.6549072,4.1464844,4.8535156L11.2929688,12l-7.1464844,7.1464844c-0.09375,0.09375-0.1464233,0.2208862-0.1464233,0.3534546C4,19.776062,4.223877,19.999939,4.5,20c0.1326294,0.0001221,0.2598267-0.0526123,0.3534546-0.1465454l7.1464844-7.1464844l7.1465454,7.1465454C19.2401123,19.9474487,19.3673706,20.0001831,19.5,20c0.1325073-0.000061,0.2595825-0.0526733,0.3533325-0.1463623C20.048645,19.6583862,20.0487061,19.3417969,19.8534546,19.1465454z"/></svg></button>
+
+                    <ul class="nav-list">
+
+                        <li><a href="">Home</a></li>
+                        <li><a href="">O nama</a></li>
+                        <li><a href="">Kursevi</a></li>
+                        <li><a href="">Priprema za ispite</a></li>
+                        <li><a href="">Cenovnik</a></li>
+                        <li><a href="">Događaji</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Kontakt</a></li>
+
+                    </ul>
+
+                </nav>
+
+                <button id="hamburger"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><path fill="#231F20" d="M8.667 15h30a1 1 0 100-2h-30a1 1 0 100 2zM8.667 37h30a1 1 0 100-2h-30a1 1 0 100 2zM8.667 26h30a1 1 0 100-2h-30a1 1 0 100 2z"/></svg></button>
+
+            </div>
+            <!-- /end header -->
+
+        </div>
+
+    </header>
+    <!-- end header -->
+
+    <section class="hero">
+        <!-- /start hero -->
+
+        <div class="container">
+
+            <div class="hero-body">
+
+                <h1>Dobrodosli u kutak u kome smo oziveli najbolje u nastavi engleskog</h1>
+                <p>Na kreativan i zabavan nacin vam pomazemo da uspesno usvojite engleski i da govorite bez blokade i treme</p>
+
+            </div>
+
+            <div class="hero-navigation">
+
+                <ul class="hero-list">
+
+                    <li>
+                        <span class="icon">icon</span>
+                        <p>Rad u malim grupama</p>
+
+                    </li>
+                    <li>
+                        <span class="icon">icon</span>
+                        <p>Rad u malim grupama</p>
+
+                    </li>
+
+                    <li>
+                        <span class="icon">icon</span>
+                        <p>Rad u malim grupama</p>
+
+                    </li>
+                    <li>
+                        <span class="icon">icon</span>
+                        <p>Rad u malim grupama</p>
+
+                    </li>
+
+                    <li>
+                        <span class="icon">icon</span>
+                        <p>Rad u malim grupama</p>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+    </section>
+    <!-- /end hero -->
+
+    <main>
+
+        <section class="paragraph">
+
+            <div class="container">
+
+                <div class="paragraph-body">
+
+                    <div class="paragraph-content">
+
+                        <h2>Ko smo mi?</h2>
+
+                        <p>Koliko često ti se dešava da slušaš engleski, sve razumeš, ali jednostavno ne umeš da progovoriš? Ili u glavi uspeš da uobličiš misao na engleskom, ali te toliko frustrira jer je potrebno mnogo vremena i truda, a na kraju zvuči
+                            pogrešno jer ne uspeš da preneseš svoju ideju onako kako želiš? Da li stalno krećeš na kurseve, ali odustaješ posle par meseci jer ne vidiš napredak? Ne postoji magični trik koji će ti pomoći da prevaziđeš blokadu u govoru,
+                            ali prevaziđene metode u nastavi i vraćanje na isti nivo te neće nigde odvesti. U ProEnglish školi smo kroz rad sa učenicima osmislili komunikacijski i interaktivni pristup koji te bez praznog hoda usmerava ka usvajanju novog
+                            znanja i popunjavanju praznina pomoću pažljivo osmišljenih vežbi govora i pisanja. Kroz pristup koji je potpuno individualizovan ti pomažemo da usvojiš gramatiku i reči koje ti možeš da koristiš svakodnevno. Naši kursevi su
+                            putovanje do znanja, a kroz metodološki rad ćemo ti pomoći da zadržiš motivaciju i otkloniš mentalne lance zbog kojih misliš da drugi znaju, ali ti nikako ne možeš da naučiš engleski. Naučnici su dokazali da za uspeh nije potreban
+                            talenat, već promišljeno vežbanje, relevantne povratne informacije i dobar profesor. Zakaži besplatan probni čas da vidiš na koji način možemo da ti pomognemo.</p>
+
+                        <div class="btn"><a href="">Pročitaj više</a></div>
+
+                    </div>
+
+                    <div class="paragraph-thumb">
+                        <img src="assets/img/img.webp" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="paragraph">
+
+            <div class="paragraph-body">
+
+                <div class="paragraph-thumb">
+                    <img src="assets/img/devojke.jpg" alt="">
+                </div>
+
+                <div class="paragraph-content">
+
+                    <h2>Kurs aktivne konverzacije</h2>
+                    <p>Kurs aktivne konverzacije namenjen je onima koji engleski razumeju u manjoj ili većoj meri, ali se plaše da govore ili ne poseduju dovoljno znanja. Kursevi su aktivnog tipa i možete da ih pohađate bez obzira na trenutni nivo znanja.
+                        Samom kursu prethodi besplatan probni čas koji će nam dati priliku da se upoznamo, procenimo vaše znanje, posavetujemo vas i odlučimo da li smo jedni za druge.</p>
+
+                    <div class="btn"><a href="">Pročitaj više</a></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        </section>
+
+        <section class="paragraph">
+
+            <div class="paragraph-body">
+                <div class="paragraph-content">
+
+                    <h2>Priprema za međunarodne ispite</h2>
+                    <p>Pripreme za međunarodne ispite su individualizovani kursevi koji omogućavaju merljiv napredak svakog pojedinačnog polaznika. Grupe su pažljivo sastavljene, a samom upisu prethode besplatne konsultacije na kojima procenjujemo vaše znanje
+                        u svakoj od četiri jezičke veštine (Reading, Listening, Speaking i Writing). Osim toga, uradićemo i probni test (tj. mock test) ispita koga polažete i pomoći da izaberete onaj na kome ćete postići najbolji skor.</p>
+
+                    <div class="btn"><a href="">Pročitaj više</a></div>
+
+                </div>
+                <div class="paragraph-thumb">
+                    <img src="zorana-proschool-obrenovac.jpg" alt="">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="blog">
+            <!-- /start blog -->
+
+            <div class="container">
+                <h2 class="blog-title">Blog</h2>
+
+                <div class="blog-posts">
+                    <!-- /start blog-posts -->
+
+                    <div class="blog-item">
+                        <img src="assets/img/download.png" alt="">
+
+                        <div class="blog-excerpt">
+                            <h3>Da li je Australija obecana zemlja?</h3>
+                            <p>Početak dvadesetog veka su obeležila velika pomeranja evropskih naroda u Ameriku..</p>
+
+                            <span class="blog-date">14. March 2021.</span>
+                            <span class="blog-author">by Jovana</span>
+                        </div>
+                    </div>
+                    <div class="blog-item">
+                        <img src="assets/img/download.png" alt="">
+                        <div class="blog-excerpt">
+                            <h3>Da li je Australija obecana zemlja?</h3>
+                            <p>Početak dvadesetog veka su obeležila velika pomeranja evropskih naroda u Ameriku: nekadašnja britanska kolonija otvorila je tada vrata hiljadama ljudi - čak 9% stanovništ...</p>
+
+                            <span class="blog-date">14. March 2021.</span>
+                            <span class="blog-author">by Jovana</span>
+                        </div>
+                    </div>
+
+
+                    <div class="blog-item">
+                        <img src="assets/img/download.png" alt="">
+                        <div class="blog-excerpt">
+                            <h3>Da li je Australija obecana zemlja?</h3>
+                            <p>Početak dvadesetog veka su obeležila velika pomeranja evropskih naroda u Ameriku: nekadašnja britanska kolonija otvorila je tada vrata hiljadama ljudi - čak 9% stanovništ...</p>
+
+                            <span class="blog-date">14. March 2021.</span>
+                            <span class="blog-author">by Jovana</span>
+                        </div>
+                    </div>
+
+
+                    <div class="blog-item">
+                        <img src="assets/img/download.png" alt="">
+                        <div class="blog-excerpt">
+                            <h3>Da li je Australija obecana zemlja?</h3>
+                            <p>Početak dvadesetog veka su obeležila velika pomeranja evropskih naroda u Ameriku: nekadašnja britanska kolonija otvorila je tada vrata hiljadama ljudi - čak 9% stanovništ...</p>
+
+                            <span class="blog-date">14. March 2021.</span>
+                            <span class="blog-author">by Jovana</span>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <!-- /end blog-posts -->
+
+            </div>
+
+        </section>
+        <!-- /end blog -->
+
+
+
+        <section class="newsletter">
+            <!-- /start newsletter -->
+            <div class="container">
+                <div class="newsletter-body">
+                    <!-- /start newsletter-body -->
+
+                    <div class="newsletter-form">
+                        <p>Jednom mesečno šaljemo lekcije iz naše učionice i vežbanja koja možete da koristite za samostalan rad. Ostavite vašu email adresu ispod i očekujte mejlove od nas sa zanimljivim tekstovima i obaveštenjima.</p>
+
+
+                        <input type="text" placeholder="Uzmite svoju dozu znanja">
+                        <button>Prijavi se</button>
+
+                        <!-- <span class="newsletter-note">* Obavezujemo se da vas email necemo slati trecim licima, vec iskljucivo za obavestavanje o nasem radu.</span> -->
+
+                    </div>
+                    <!-- /end newsletter-form -->
+
+                    <div class="newsletter-icon">
+
+                    </div>
+                    <!-- /end newsletter-description -->
+                </div>
+                <!-- /end newsletter-body -->
+            </div>
+        </section>
+        <!-- /end newsletter -->
+
+        <section class="events">
+            <!-- /start events -->
+
+            <div class="container">
+
+                <div class="events-body">
+                    <!-- /start events-body -->
+
+                    <div class="events-item">event 1</div>
+                    <div class="events-item">event 2</div>
+                    <div class="events-item">event 3</div>
+
+
+                </div>
+                <!-- /end events-body -->
+
+            </div>
+
+        </section>
+        <!-- /endevents -->
+
+        <section class="testimonials">
+
+            <div class="container">
+
+                <h4>Sta kazu nasi ucenici o nama</h4>
+                <div class="swiper new-swiper">
+                    <!-- /start swiper -->
+
+                    <div class="swiper-wrapper">
+
+                        <div class="testimonials-item swiper-slide">
+
+                            <p>Engleski sam počela da učim jer sam želela da idem na kruzer, a za to mi je na prvom mestu bio potreban engleski jezik. Za školu sam saznala preko instagrama, preko preporuke jedne devojke. Počela sam od samog početka – A1
+                                nivoa – a sada sam B1 nivo i učim kako bih bila B2. Uz podršku i pomoć profesora sam uspela da se oslobodim stega i da konačno progovorim. Usvojeno znanje je primenljivo u svakodnevnom životu i jasno predstavljeno na času.
+                                Školu bih preporučila svakome ko želi da na potpuno nov i drugačiji način uči i savlada jezik</p>
+
+                            <div class="testimonials-user">
+
+                                <img src="" alt="">
+                                <div class="testimonial-name">Jovana Obradovic</div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="testimonials-item swiper-slide">
+
+                            <p>Engleski sam počela da učim jer sam želela da idem na kruzer, a za to mi je na prvom mestu bio potreban engleski jezik. Za školu sam saznala preko instagrama, preko preporuke jedne devojke. Počela sam od samog početka – A1
+                                nivoa – a sada sam B1 nivo i učim kako bih bila B2. Uz podršku i pomoć profesora sam uspela da se oslobodim stega i da konačno progovorim. Usvojeno znanje je primenljivo u svakodnevnom životu i jasno predstavljeno na času.
+                                Školu bih preporučila svakome ko želi da na potpuno nov i drugačiji način uči i savlada jezik</p>
+
+                            <div class="testimonials-user">
+
+                                <img src="" alt="">
+                                <div class="testimonial-user-name">Jovana Obradovic</div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="testimonials-item swiper-slide">
+
+                            <p>Engleski sam počela da učim jer sam želela da idem na kruzer, a za to mi je na prvom mestu bio potreban engleski jezik. Za školu sam saznala preko instagrama, preko preporuke jedne devojke. Počela sam od samog početka – A1
+                                nivoa – a sada sam B1 nivo i učim kako bih bila B2. Uz podršku i pomoć profesora sam uspela da se oslobodim stega i da konačno progovorim. Usvojeno znanje je primenljivo u svakodnevnom životu i jasno predstavljeno na času.
+                                Školu bih preporučila svakome ko želi da na potpuno nov i drugačiji način uči i savlada jezik</p>
+
+                            <div class="testimonials-user">
+
+                                <img src="" alt="">
+                                <div class="testimonial-user-name">Jovana Obradovic</div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="testimonials-item swiper-slide">
+
+                            <p>Engleski sam počela da učim jer sam želela da idem na kruzer, a za to mi je na prvom mestu bio potreban engleski jezik. Za školu sam saznala preko instagrama, preko preporuke jedne devojke. Počela sam od samog početka – A1
+                                nivoa – a sada sam B1 nivo i učim kako bih bila B2. Uz podršku i pomoć profesora sam uspela da se oslobodim stega i da konačno progovorim. Usvojeno znanje je primenljivo u svakodnevnom životu i jasno predstavljeno na času.
+                                Školu bih preporučila svakome ko želi da na potpuno nov i drugačiji način uči i savlada jezik</p>
+
+                            <div class="testimonials-user">
+
+                                <img src="" alt="">
+                                <div class="testimonial-user-name">Jovana Obradovic</div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="testimonials-item swiper-slide">
+
+                            <p>Engleski sam počela da učim jer sam želela da idem na kruzer, a za to mi je na prvom mestu bio potreban engleski jezik. Za školu sam saznala preko instagrama, preko preporuke jedne devojke. Počela sam od samog početka – A1
+                                nivoa – a sada sam B1 nivo i učim kako bih bila B2. Uz podršku i pomoć profesora sam uspela da se oslobodim stega i da konačno progovorim. Usvojeno znanje je primenljivo u svakodnevnom životu i jasno predstavljeno na času.
+                                Školu bih preporučila svakome ko želi da na potpuno nov i drugačiji način uči i savlada jezik</p>
+
+                            <div class="testimonials-user">
+
+                                <img src="" alt="">
+                                <div class="testimonial-user-name">Jovana Obradovic</div>
+
+                            </div>
+
+                        </div>
+                        <div class="testimonials-item swiper-slide">
+
+                            <p>Engleski sam počela da učim jer sam želela da idem na kruzer, a za to mi je na prvom mestu bio potreban engleski jezik. Za školu sam saznala preko instagrama, preko preporuke jedne devojke. Počela sam od samog početka – A1
+                                nivoa – a sada sam B1 nivo i učim kako bih bila B2. Uz podršku i pomoć profesora sam uspela da se oslobodim stega i da konačno progovorim. Usvojeno znanje je primenljivo u svakodnevnom životu i jasno predstavljeno na času.
+                                Školu bih preporučila svakome ko želi da na potpuno nov i drugačiji način uči i savlada jezik</p>
+
+                            <div class="testimonials-user">
+
+                                <img src="" alt="">
+                                <div class="testimonial-user-name">Jovana Obradovic</div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="testimonials-item swiper-slide">
+
+                            <p>Engleski sam počela da učim jer sam želela da idem na kruzer, a za to mi je na prvom mestu bio potreban engleski jezik. Za školu sam saznala preko instagrama, preko preporuke jedne devojke. Počela sam od samog početka – A1
+                                nivoa – a sada sam B1 nivo i učim kako bih bila B2. Uz podršku i pomoć profesora sam uspela da se oslobodim stega i da konačno progovorim. Usvojeno znanje je primenljivo u svakodnevnom životu i jasno predstavljeno na času.
+                                Školu bih preporučila svakome ko želi da na potpuno nov i drugačiji način uči i savlada jezik</p>
+
+                            <div class="testimonials-user">
+
+                                <img src="" alt="">
+                                <div class="testimonial-user-name">Jovana Obradovic</div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="testimonials-item swiper-slide">
+
+                            <p>Engleski sam počela da učim jer sam želela da idem na kruzer, a za to mi je na prvom mestu bio potreban engleski jezik. Za školu sam saznala preko instagrama, preko preporuke jedne devojke. Počela sam od samog početka – A1
+                                nivoa – a sada sam B1 nivo i učim kako bih bila B2. Uz podršku i pomoć profesora sam uspela da se oslobodim stega i da konačno progovorim. Usvojeno znanje je primenljivo u svakodnevnom životu i jasno predstavljeno na času.
+                                Školu bih preporučila svakome ko želi da na potpuno nov i drugačiji način uči i savlada jezik</p>
+
+                            <div class="testimonials-user">
+
+                                <img src="" alt="">
+                                <div class="testimonial-user-name">Jovana Obradovic</div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="testimonials-item swiper-slide">
+
+                            <p>Engleski sam počela da učim jer sam želela da idem na kruzer, a za to mi je na prvom mestu bio potreban engleski jezik. Za školu sam saznala preko instagrama, preko preporuke jedne devojke. Počela sam od samog početka – A1
+                                nivoa – a sada sam B1 nivo i učim kako bih bila B2. Uz podršku i pomoć profesora sam uspela da se oslobodim stega i da konačno progovorim. Usvojeno znanje je primenljivo u svakodnevnom životu i jasno predstavljeno na času.
+                                Školu bih preporučila svakome ko želi da na potpuno nov i drugačiji način uči i savlada jezik</p>
+
+                            <div class="testimonials-user">
+
+                                <img src="" alt="">
+                                <div class="testimonial-user-name">Jovana Obradovic</div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- /end swiper-wrapper -->
+
+                    <div class="swiper-pagination"></div>
+                </div>
+                <!-- /end swiper -->
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="container">
+
+            <div class="footer-body">
+
+                <div class="footer-item">
+
+                    <h6>Proenglish</h6>
+                    <p>We are Education, your passion for knowledge and inspiration. Step inside our school and make English your comfort zone. Follow us to get the latest news and your piece of knowledge.
+                    </p>
+
+                    <p>Predstavljamo novi vid obrazovanja gde budimo strast i inspiraciju za učenje jezika. Zakorači u naš svet i nek ti engleski bude tvoja zona komfora. Kontaktiraj nas da bi postao deo novog trenda učenja.</p>
+
+                </div>
+
+                <div class="footer-item">
+
+                    <h6>Kursevi</h6>
+                    <ul>
+                        <li><a href="">Kurs konverzacije</a></li>
+                        <li>
+                            <a href="">A2</a>
+                        </li>
+                        <li>
+                            <a href="">B1</a>
+                        </li>
+                        <li>
+                            <a href="">B2</a>
+                        </li>
+                        <li>
+                            <a href="">C1</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-item">
+
+                    <h6>Kursevi</h6>
+
+                    <ul>
+                        <li><a href="">Kurs konverzacije</a></li>
+                        <li>
+                            <a href="">A2</a>
+                        </li>
+                        <li>
+                            <a href="">B1</a>
+                        </li>
+                        <li>
+                            <a href="">B2</a>
+                        </li>
+                        <li>
+                            <a href="">C1</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="footer-misc">
+
+                <ul class="footer-misc-list">
+
+                    <li>
+                        <a href="">Zeleni venac 2a, Beograd</a>
+                    </li>
+
+                    <li>
+                        <a href="">Zeleni venac 2a, Beograd</a>
+                    </li>
+                    <li>
+                        <a href="">0669637588</a>
+                    </li>
+                    <li>
+                        <a href="">0669637588</a>
+                    </li>
+
+                </ul>
+
+
+                <ul class="footer-misc-list">
+
+                    <li>
+                        <a href="">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="">Linkedin</a>
+                    </li>
+
+                </ul>
+            </div>
+            <p>© 2021 - MERN APP - All rights reserved.</p>
+        </div>
+
+    </footer>
+
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>
